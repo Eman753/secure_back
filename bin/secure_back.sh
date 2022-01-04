@@ -2,7 +2,7 @@
 
 DATEHOUR=$(date +%Y-%m-%d-%Hh%M)
 
-DIR="/var/local/secure_back"
+DIR=`cat /etc/secure_back/secure_back.conf`
 
 #echo $DATEHOUR
 
