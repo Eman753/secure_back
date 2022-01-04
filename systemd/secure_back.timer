@@ -1,0 +1,10 @@
+[Unit]
+Description=Minuteur pour secure_back.service
+
+[Timer]
+OnBootSec=60min
+OnUnitActiveSec=720min
+Unit=secure_back.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,9 @@
+[Unit]
+Description=Service de sauvegarde système local
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/systemd/secure_back.sh start
+ExecStop=/usr/local/systemd/secure_back.sh stop
+Restart=on-failure
